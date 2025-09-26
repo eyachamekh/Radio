@@ -1,0 +1,42 @@
+<div class="history-container">
+  <h3>🕒 News History</h3>
+
+  <!-- Search bar -->
+  <div class="search-bar">
+    <input
+      type="text"
+      placeholder="Search history..."
+      [(ngModel)]="searchText"
+    />
+  </div>
+
+  <!-- Display paginated news -->
+  <div *ngFor="let item of paginatedHistory()" class="history-item">
+    <div class="date">{{ item.date | date:'short' }}</div>
+    <div class="text">{{ item.cleanedText }}</div>
+    
+    <button class="play-btn" (click)="playAudio(item.cleanedText)">
+      🔊 Play Again
+    </button>
+
+    <details>
+      <summary>Categories</summary>
+      <pre>{{ item.categories | json }}</pre>
+    </details>
+  </div>
+
+  <!-- Pagination controls -->
+  <div class="pagination" *ngIf="totalPages() > 1">
+    <button (click)="goToPage(currentPage - 1)" [disabled]="currentPage === 1">« Prev</button>
+
+    <button 
+      *ngFor="let page of [].constructor(totalPages()); let i = index"
+      (click)="goToPage(i + 1)"
+      [class.active]="currentPage === i + 1"
+    >
+      {{ i + 1 }}
+    </button>
+
+    <button (click)="goToPage(currentPage + 1)" [disabled]="currentPage === totalPages()">Next »</button>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="layout-container">
+  <div class="sidebar">
+    <h1>Radio FM</h1>
+    <ul>
+      <li>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          📰 Process News
+        </a>
+      </li>
+      <li>
+        <a routerLink="/history" routerLinkActive="active">
+          📜 History
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+ <div class="newsreader-container">
+  <h2>News Reader</h2>
+    <!-- Avatar selector -->
+  <div class="avatar-selector">
+    <label for="avatar">Choose Avatar:</label>
+    <select id="avatar" (change)="onAvatarChange($event)">
+      <option value="assets/womenn.glb">Woman Avatar</option>
+      <option value="assets/man.glb">Man Avatar</option>
+    </select>
+  </div>
+  <div id="avatar-container" ></div>
+
+  <div class="controls">
+  <button (click)="readAllNews()">📢 Read All News</button>
+</div> 
+
+  <!-- Display each news item -->
+<div *ngFor="let item of newsItems; let i = index" class="news-item">
+  <h3>{{ item.category }}</h3>
+  <p>{{ item.text }}</p> 
+<!-- Media preview -->
+<div class="media-preview" *ngIf="item.mediaUrl">
+  <img *ngIf="item.mediaType === 'image'" [src]="item.mediaUrl" alt="News media" style="max-width: 200px; border-radius: 8px;" />
+  <video *ngIf="item.mediaType === 'video'" [src]="item.mediaUrl" controls style="max-width: 200px; border-radius: 8px;"></video>
+</div>
+
+  <!-- Hidden input -->
+  <input type="file" id="file-{{i}}" (change)="onMediaSelected($event, item)" style="display:none;" />
+
+  <!-- Label styled as button -->
+  <label class="file-button" for="file-{{i}}">📁 Choose File</label>
+  <button (click)="readNews(item)">🔊 Read this News</button>
+</div>
+</div> 

@@ -1,0 +1,38 @@
+  <div class="content">
+    <h2>📝 Add News</h2>
+
+    <form (ngSubmit)="processNews()" #newsForm="ngForm">
+      <textarea [(ngModel)]="newsText" name="newsText" rows="6" placeholder="Write your news here or upload a file"></textarea>
+
+     <input type="file" id="fileInput" (change)="onFileSelected($event)" accept=".pdf,.txt,.docx" hidden />
+     <label for="fileInput" class="custom-file-button">📁 Upload File</label>
+
+      <div *ngIf="extractedText">
+        <h4>📄 Extracted Text Preview:</h4>
+        <textarea [value]="extractedText" rows="6" readonly></textarea>
+      </div>
+
+      <br><br>
+      <button type="submit">Process News</button>
+    </form>
+
+    <div *ngIf="processedNews" class="results-container">
+      <div class="result-section">
+        <h3>✅ Cleaned Text:</h3>
+        <p>{{ processedNews.cleanedText }}</p>
+      </div>
+
+      <div class="result-section">
+        <h3>🧠 Categorized:</h3>
+          <pre>{{ processedNews.categories | json }}</pre>
+        </div>
+
+      <button (click)="playAudio(processedNews.cleanedText)">🔊 Read It</button>
+      <button (click)="readNews()">👤 News Reader</button>
+
+    </div>
+
+
+
+
+  </div>

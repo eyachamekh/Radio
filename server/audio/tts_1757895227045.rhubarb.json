@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "soundFile": "C:\\Users\\Lenovo\\Desktop\\Stage radio\\radio\\server\\audio\\tts_1757895227045.wav",
+    "duration": 0.91
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.19, "value": "X" },
+    { "start": 0.19, "end": 0.23, "value": "B" },
+    { "start": 0.23, "end": 0.48, "value": "E" },
+    { "start": 0.48, "end": 0.55, "value": "G" },
+    { "start": 0.55, "end": 0.69, "value": "B" },
+    { "start": 0.69, "end": 0.91, "value": "X" }
+  ]
+}

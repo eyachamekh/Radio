@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "soundFile": "C:\\Users\\Lenovo\\Desktop\\Stage radio\\radio\\server\\audio\\tts_1757937643847.wav",
+    "duration": 4.31
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.09, "value": "X" },
+    { "start": 0.09, "end": 0.23, "value": "D" },
+    { "start": 0.23, "end": 0.27, "value": "C" },
+    { "start": 0.27, "end": 0.46, "value": "B" },
+    { "start": 0.46, "end": 0.53, "value": "C" },
+    { "start": 0.53, "end": 0.67, "value": "H" },
+    { "start": 0.67, "end": 0.74, "value": "C" },
+    { "start": 0.74, "end": 0.81, "value": "B" },
+    { "start": 0.81, "end": 0.88, "value": "C" },
+    { "start": 0.88, "end": 1.09, "value": "B" },
+    { "start": 1.09, "end": 1.30, "value": "D" },
+    { "start": 1.30, "end": 1.37, "value": "B" },
+    { "start": 1.37, "end": 1.51, "value": "C" },
+    { "start": 1.51, "end": 1.58, "value": "D" },
+    { "start": 1.58, "end": 1.66, "value": "A" },
+    { "start": 1.66, "end": 1.83, "value": "B" },
+    { "start": 1.83, "end": 1.90, "value": "F" },
+    { "start": 1.90, "end": 2.11, "value": "B" },
+    { "start": 2.11, "end": 2.19, "value": "A" },
+    { "start": 2.19, "end": 2.35, "value": "C" },
+    { "start": 2.35, "end": 2.56, "value": "B" },
+    { "start": 2.56, "end": 2.63, "value": "F" },
+    { "start": 2.63, "end": 2.91, "value": "D" },
+    { "start": 2.91, "end": 3.05, "value": "C" },
+    { "start": 3.05, "end": 3.12, "value": "B" },
+    { "start": 3.12, "end": 3.26, "value": "C" },
+    { "start": 3.26, "end": 3.47, "value": "B" },
+    { "start": 3.47, "end": 3.54, "value": "C" },
+    { "start": 3.54, "end": 4.10, "value": "B" },
+    { "start": 4.10, "end": 4.24, "value": "C" },
+    { "start": 4.24, "end": 4.31, "value": "X" }
+  ]
+}
