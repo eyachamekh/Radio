@@ -47,8 +47,8 @@ npm install
 
 Setup Environment Variables
 
-# OPENAI_API_KEY=your_open_api_key
-# ELEVEN_API_KEY=your_eleven_api_key
+ OPENAI_API_KEY=your_open_api_key
+ ELEVEN_API_KEY=your_eleven_api_key
 
 ---
 
@@ -58,13 +58,15 @@ node index.js
 
 ---
 
-##Run the frontend
+## Run the frontend
+
 cd client
 ng serve
 
 ---
 
-##⚠️ Notes
+## ⚠️ Notes
+
 Make sure Rhubarb is installed for lip-sync functionality:
 rhubarb --version
 
